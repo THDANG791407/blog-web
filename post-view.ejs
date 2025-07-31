@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css" >
+    <title>My blog</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <main class="single-post">
+        <h1><%= post.title %></h1>
+        <p class="post-date">Ngày đăng: <%= post.date %></p>
+        <% if (post.image) { %>
+            <img src="<%= post.image %>" alt="ảnh bài viết" >
+        <% } %>
+        <article>
+            <%- post.content.replace(/\r?\n/g, "br") %>
+        </article>
+        <div class="post-action">
+            <a href="/" class="btn back-btn">← Quay lại trang chủ</a>
+            <a href="/post/edit/<%= post.id %>">✏️ Chỉnh sửa</a>
+            <form action="/post/delete/<%= post.id %>" method="POST" onsubmit="return confirm('Bạn có chắc muốn xóa bài viết')" style="display:inline">
+                <button type="submit" class="btn delete-btn">🗑️ Xóa bài viết</button>
+
+            </form>
+
+        </div>
+
+    </main>
+    <%- include("partials/footer.ejs") %>
+    
+</body>
+</html>
