@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = stylesheet href="/styles/layout.css">
+    <title>My Blog</title>
+</head>
+<body>
+    <%- include('partials/header')  %>
+    <div class="layout">
+        <aside class="sidebar-left">
+            <div class="sidebar-section">
+            <h3>📚 Chủ đề</h3>
+            <ul>
+                <li><a href="#">Công nghệ</a></li>
+                <li><a href="#">Du lịch</a></li>
+                <li><a href="#">Tài chính</a></li>
+            </ul>
+            </div>
+            <div class="sidebar-section">
+                <a href="/post/new" class="add-post-btn">➕ Thêm bài viết</a>
+            </div>
+
+        </aside>
+        <main>
+            <div class="main-content grid-view">
+                <% if (posts && posts.length > 0) { %>
+                    <% posts.forEach(post => { %>
+                        <article class="post-card">
+                           <% if (post.image) { %>
+                                <img src="<%= post.img %>" alt="ảnh bài viết" />
+                          <%  } %>
+                          <div class="post-info">
+                            <h2><a href="/post/<%= post.id %>"><%= post.title %></a></h2>
+                            <p class="post-meta">📁 <%= post.category %> - 🕒 <%= post.date %></p>
+                            <p class="post-snippet"><%= post.content.slice(0,100) %>...</p>
+                            <a class="read-more" href="/post/<%= post.id %>">Đọc tiếp ➤</a>
+                          </div>
+                          <div class="menu-wrapper">
+                            <button class="menu-toggle"> ⋮ </button>
+                            <div class="context-menu">
+                                <a href="/post/edit/<%= post.id %>">Chỉnh sửa</a>
+                                <form action="/post/delete/<%= post.id %>" method="post" style="display:inline;">
+                                    <button type="submit" class="delete-btn" onclick="return confirm('Bạn có chắc muốn xóa')">Xóa</button>
+                                </form>
+
+                            </div>
+
+               >           </div>
+
+                        </article>
+
+                    <% }) %>
+
+                <% } else { %>
+                    <p>Chưa có bài viết nào </p>
+                <% } %>
+
+            </div>
+            <div class="pagination">
+                <% if (currentPage > 1) { %>
+                    <a href="/?page = <%= currentPage -1 %>"><- Trang trước</a>
+               <% } %>
+               <% for (let i = 1; i <= totalPages; i++) { %>
+                    <% if (i === currentPage) { %>
+                        <span><strong><%= i %></strong></span>
+                    <% } else  { %>
+                        <a href="/?page = <%= i %>"><%= i %></a>
+                    <% } %>
+               <% } %>
+               <% if (currentPage < totalPages) { %>
+                <a href="/?page= <%= currentPage + 1 %>">Trang sau -></a>
+               <% } %>
+
+            </div>
+
+        </main>
+        <aside class="sidebar-right">
+
+        </aside>
+
+    </div>
+    <%- include('partials/footer') %>
+    <script>
+        // bấm vào 3 nút thì toggle menu
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".menu-toggle").forEach(button => {
+                button.addEventListener("click", function(e) {
+                    e.stopPropagation(); //không lan ra ngoài
+
+                    //Đóng các menu khác
+                    document.querySelectorAll(".context-menu").forEach(menu => {
+                        if (menu !== this.nextElementSibling) menu.style.display = "none";
+                    });
+                    // toggle menu hiện tại
+                    const menu = this.nextElementSibling;
+                    menu.style.display = menu.style.display === "block" ? "none" : "block"; 
+                });
+                
+            });
+            // click bên ngoài sẽ đóng tất cả menu
+                document.addEventListener("click", () => {
+                    document.querySelectorAll(".context-menu").forEach(menu => {
+                        menu.style.display = "none";
+                    });
+                });
+        });
+    </script>
+    
+</body>
+</html>

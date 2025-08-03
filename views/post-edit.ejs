@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylesheet" href="/styles/layout.css">
+    <title>My Blog</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main class="form-page">
+        <h2>📝 Chỉnh sửa bài viết</h2>
+        <form action="/post/edit/<%= post.id %>" method="POST" class="post-form">
+            <label for="title">Tiêu đề</label>
+            <input type="text" id="title" name="title" placeholder="Tiêu đề" value="<%= post.title %>" required />
+            <label for="category">Chủ đề</label>
+            <select id="category" name="category" required>
+                <option value="" disabled <%= !post.category ? "selected" : "" %>>--chọn chủ đề--</option>
+                <option value="công nghệ" <%= post.category === "công nghệ" ? "selected" : "" %> >Công nghệ</option>
+                <option value="du lịch" <%= post.category === "du lịch" ? "selected" : "" %>>Du lịch</option>
+                <option value="tài chính" <%= post.category === "du lịch" ? "selected" : "" %>>Tài chính</option>
+            </select>
+            <label for="image">Link ảnh URL</label>
+            <input type="url" id="image" name="image" placeholder="https://..." value="<%= post.image %>" />
+            <label for="content">Nội dung</label>
+            <textarea type="text" id="content" name="content" rows="8" placeholder="Nội dung bài viết" required><%= post.content %></textarea>
+            <button type="submit" class="btn-button">📤 Cập nhật</button>
+        </form>
+
+
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

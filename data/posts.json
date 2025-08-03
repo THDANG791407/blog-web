@@ -1,0 +1,171 @@
+
+  [
+  {
+    "id": "2025-07-15T17:00:00+07:00",
+    "category": "Lập trình",
+    "title": "Bắt đầu với Express.js: Hướng dẫn trong 15 phút",
+    "image": "/images/express-getting-started.png",
+    "content": "Express.js là framework web tối giản chạy trên Node.js. Bài viết này hướng dẫn bạn tạo server đầu tiên, cấu hình middleware và render view với EJS."
+  },
+  {
+    "id": "2025-07-14T10:30:00+07:00",
+    "category": "Web Front‑End",
+    "title": "5 mẹo tối ưu Lighthouse cho trang React",
+    "image": "/images/lighthouse-tips.png",
+    "content": "Google Lighthouse chấm điểm hiệu năng, accessibility và SEO. Bài viết chia sẻ 5 mẹo đơn giản để cải thiện điểm số React app của bạn."
+  },
+  {
+    "id": "2025-07-13T08:00:00+07:00",
+    "category": "Machine Learning",
+    "title": "Hiểu rõ Gradient Descent qua hình minh hoạ",
+    "image": "/images/gradient-descent.png",
+    "content": "Gradient Descent là thuật toán cốt lõi trong huấn luyện mạng nơ‑ron. Bài viết giải thích trực quan cách thuật toán tìm điểm cực tiểu của hàm mất mát."
+  },
+  {
+    "id": "2025-07-12T12:15:00+07:00",
+    "category": "Trading",
+    "title": "Chiến lược EMA 9/20 & SMA 50 cho khung 5‑15 phút",
+    "image": "/images/ema-sma-strategy.png",
+    "content": "Tác giả trình bày chi tiết cách xác định xu hướng đa khung thời gian và quy tắc cắt lỗ khi giá phá VWAP, phù hợp với trader ưu tiên lệnh long."
+  },
+  {
+    "id": "2025-07-11T19:45:00+07:00",
+    "category": "Cuộc sống",
+    "title": "Cân bằng code & chạy Grab: Lịch trình mẫu",
+    "image": "/images/balance-life.png",
+    "content": "Nếu bạn lái Grab 17h–23h hằng ngày, đây là lịch trình gợi ý giúp duy trì sức khỏe, học lập trình và vẫn có thời gian nghỉ ngơi."
+  },
+  {
+    "id": "2025-07-10T09:20:00+07:00",
+    "category": "Design",
+    "title": "Bán template Canva: 7 bước từ ý tưởng tới doanh thu",
+    "image": "/images/canva-templates.png",
+    "content": "Hướng dẫn từng bước để nghiên cứu thị trường, thiết kế, xuất bản và marketing template Canva nhằm tạo nguồn thu thụ động."
+  },
+  {
+    "id": "2025-07-15T17:00:00+07:00",
+    "category": "Lập trình",
+    "title": "Bắt đầu với Express.js: Hướng dẫn trong 15 phút",
+    "image": "/images/express-getting-started.png",
+    "content": "Express.js là framework web tối giản chạy trên Node.js. Bài viết này hướng dẫn bạn tạo server đầu tiên, cấu hình middleware và render view với EJS."
+  },
+  {
+    "id": "2025-07-14T10:30:00+07:00",
+    "category": "Web Front‑End",
+    "title": "5 mẹo tối ưu Lighthouse cho trang React",
+    "image": "/images/lighthouse-tips.png",
+    "content": "Google Lighthouse chấm điểm hiệu năng, accessibility và SEO. Bài viết chia sẻ 5 mẹo đơn giản để cải thiện điểm số React app của bạn."
+  },
+  {
+    "id": "2025-07-13T08:00:00+07:00",
+    "category": "Machine Learning",
+    "title": "Hiểu rõ Gradient Descent qua hình minh hoạ",
+    "image": "/images/gradient-descent.png",
+    "content": "Gradient Descent là thuật toán cốt lõi trong huấn luyện mạng nơ‑ron. Bài viết giải thích trực quan cách thuật toán tìm điểm cực tiểu của hàm mất mát."
+  },
+  {
+    "id": "2025-07-12T12:15:00+07:00",
+    "category": "Trading",
+    "title": "Chiến lược EMA 9/20 & SMA 50 cho khung 5‑15 phút",
+    "image": "/images/ema-sma-strategy.png",
+    "content": "Tác giả trình bày chi tiết cách xác định xu hướng đa khung thời gian và quy tắc cắt lỗ khi giá phá VWAP, phù hợp với trader ưu tiên lệnh long."
+  },
+  {
+    "id": "2025-07-11T19:45:00+07:00",
+    "category": "Cuộc sống",
+    "title": "Cân bằng code & chạy Grab: Lịch trình mẫu",
+    "image": "/images/balance-life.png",
+    "content": "Nếu bạn lái Grab 17h–23h hằng ngày, đây là lịch trình gợi ý giúp duy trì sức khỏe, học lập trình và vẫn có thời gian nghỉ ngơi."
+  },
+  {
+    "id": "2025-07-10T09:20:00+07:00",
+    "category": "Design",
+    "title": "Bán template Canva: 7 bước từ ý tưởng tới doanh thu",
+    "image": "/images/canva-templates.png",
+    "content": "Hướng dẫn từng bước để nghiên cứu thị trường, thiết kế, xuất bản và marketing template Canva nhằm tạo nguồn thu thụ động."
+  },
+  {
+    "id": "2025-07-15T17:00:00+07:00",
+    "category": "Lập trình",
+    "title": "Bắt đầu với Express.js: Hướng dẫn trong 15 phút",
+    "image": "/images/express-getting-started.png",
+    "content": "Express.js là framework web tối giản chạy trên Node.js. Bài viết này hướng dẫn bạn tạo server đầu tiên, cấu hình middleware và render view với EJS."
+  },
+  {
+    "id": "2025-07-14T10:30:00+07:00",
+    "category": "Web Front‑End",
+    "title": "5 mẹo tối ưu Lighthouse cho trang React",
+    "image": "/images/lighthouse-tips.png",
+    "content": "Google Lighthouse chấm điểm hiệu năng, accessibility và SEO. Bài viết chia sẻ 5 mẹo đơn giản để cải thiện điểm số React app của bạn."
+  },
+  {
+    "id": "2025-07-13T08:00:00+07:00",
+    "category": "Machine Learning",
+    "title": "Hiểu rõ Gradient Descent qua hình minh hoạ",
+    "image": "/images/gradient-descent.png",
+    "content": "Gradient Descent là thuật toán cốt lõi trong huấn luyện mạng nơ‑ron. Bài viết giải thích trực quan cách thuật toán tìm điểm cực tiểu của hàm mất mát."
+  },
+  {
+    "id": "2025-07-12T12:15:00+07:00",
+    "category": "Trading",
+    "title": "Chiến lược EMA 9/20 & SMA 50 cho khung 5‑15 phút",
+    "image": "/images/ema-sma-strategy.png",
+    "content": "Tác giả trình bày chi tiết cách xác định xu hướng đa khung thời gian và quy tắc cắt lỗ khi giá phá VWAP, phù hợp với trader ưu tiên lệnh long."
+  },
+  {
+    "id": "2025-07-11T19:45:00+07:00",
+    "category": "Cuộc sống",
+    "title": "Cân bằng code & chạy Grab: Lịch trình mẫu",
+    "image": "/images/balance-life.png",
+    "content": "Nếu bạn lái Grab 17h–23h hằng ngày, đây là lịch trình gợi ý giúp duy trì sức khỏe, học lập trình và vẫn có thời gian nghỉ ngơi."
+  },
+  {
+    "id": "2025-07-10T09:20:00+07:00",
+    "category": "Design",
+    "title": "Bán template Canva: 7 bước từ ý tưởng tới doanh thu",
+    "image": "/images/canva-templates.png",
+    "content": "Hướng dẫn từng bước để nghiên cứu thị trường, thiết kế, xuất bản và marketing template Canva nhằm tạo nguồn thu thụ động."
+  },
+  {
+    "id": "2025-07-15T17:00:00+07:00",
+    "category": "Lập trình",
+    "title": "Bắt đầu với Express.js: Hướng dẫn trong 15 phút",
+    "image": "/images/express-getting-started.png",
+    "content": "Express.js là framework web tối giản chạy trên Node.js. Bài viết này hướng dẫn bạn tạo server đầu tiên, cấu hình middleware và render view với EJS."
+  },
+  {
+    "id": "2025-07-14T10:30:00+07:00",
+    "category": "Web Front‑End",
+    "title": "5 mẹo tối ưu Lighthouse cho trang React",
+    "image": "/images/lighthouse-tips.png",
+    "content": "Google Lighthouse chấm điểm hiệu năng, accessibility và SEO. Bài viết chia sẻ 5 mẹo đơn giản để cải thiện điểm số React app của bạn."
+  },
+  {
+    "id": "2025-07-13T08:00:00+07:00",
+    "category": "Machine Learning",
+    "title": "Hiểu rõ Gradient Descent qua hình minh hoạ",
+    "image": "/images/gradient-descent.png",
+    "content": "Gradient Descent là thuật toán cốt lõi trong huấn luyện mạng nơ‑ron. Bài viết giải thích trực quan cách thuật toán tìm điểm cực tiểu của hàm mất mát."
+  },
+  {
+    "id": "2025-07-12T12:15:00+07:00",
+    "category": "Trading",
+    "title": "Chiến lược EMA 9/20 & SMA 50 cho khung 5‑15 phút",
+    "image": "/images/ema-sma-strategy.png",
+    "content": "Tác giả trình bày chi tiết cách xác định xu hướng đa khung thời gian và quy tắc cắt lỗ khi giá phá VWAP, phù hợp với trader ưu tiên lệnh long."
+  },
+  {
+    "id": "2025-07-11T19:45:00+07:00",
+    "category": "Cuộc sống",
+    "title": "Cân bằng code & chạy Grab: Lịch trình mẫu",
+    "image": "/images/balance-life.png",
+    "content": "Nếu bạn lái Grab 17h–23h hằng ngày, đây là lịch trình gợi ý giúp duy trì sức khỏe, học lập trình và vẫn có thời gian nghỉ ngơi."
+  },
+  {
+    "id": "2025-07-10T09:20:00+07:00",
+    "category": "Design",
+    "title": "Bán template Canva: 7 bước từ ý tưởng tới doanh thu",
+    "image": "/images/canva-templates.png",
+    "content": "Hướng dẫn từng bước để nghiên cứu thị trường, thiết kế, xuất bản và marketing template Canva nhằm tạo nguồn thu thụ động."
+  }
+]

@@ -1,0 +1,570 @@
+/* Chỉnh header */
+header {
+    background-image: url("/styles/header-background.jpg");
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    color: white;
+
+}
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+nav .btn {
+    margin-left: 10px;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 12px;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+}
+.btn a {
+    text-decoration: none;
+    color: white
+}
+
+nav .btn:hover {
+    background-color: rgba(14, 13, 13, 0.2); /* nền mờ */
+  color: white;
+}
+
+/* Chỉnh footer */
+footer {
+    background-color: burlywood;
+    color: black;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .social-icon, footer .menu {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-icon li, 
+footer .menu li {
+    list-style: none;
+}
+
+footer .social-icon li a {
+    font-size: 2em;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social-icon li a:hover {
+    transform: translateX(15px);
+    color: blue;
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+    color: blue;
+}
+
+p {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+/* Thêm bài viết */
+main.form-page {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0,0,0,0,0,1);
+
+};
+
+.post-form label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.post-form input,
+.post-form select,
+.post-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.post-form input:focus,
+.post-form select:focus,
+.post-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+} /* khi nhập thiếu ô nhập chuyển sang màu xanh */
+
+.post-form button.btn-button {
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.post-form button.btn-button:hover {
+    background-color: hotpink;
+}
+
+/* Chỉnh trang chủ bài viết */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 4fr 0.5fr;
+  gap: 20px;
+  padding: 20px;
+}
+/* trang chủ phần main */
+.main-content.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding-top: 10px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgb(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+.post-card:hover {
+    transform: translateY(-4px);
+}
+.post-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.post-info {
+    padding: 16px;
+
+}
+.post-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+.post-meta {
+    font-size: 13px;
+    color: #888;
+    margin-top: 6px;
+}
+.post-snippet {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #333;
+}
+.read-more {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+/* trang chủ phần sidebar-left */
+.sidebar-left {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    max-width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar-section {
+    margin-bottom: 30px;
+}
+.sidebar-left h3 {
+ font-size: 1.2em;
+ margin-bottom: 10px;
+ color: #333;
+}
+.sidebar-left ul {
+    list-style: none;
+    padding-left: 0;
+}
+.sidebar-left ul li {
+    margin-bottom: 10px;
+}
+.sidebar-left ul li a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.sidebar-left ul li a:hover {
+    color: #005999;
+    text-decoration: underline;
+}
+.add-post-btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+};
+.add-post-btn:hover {
+    color: #eec033;
+    text-decoration: underline;
+}
+/* nút toggle menu */
+.menu-wrapper {
+    position: absolute;
+    top:10px;
+    right: 10px;
+
+}
+.menu-toggle {
+    background: rgba(255,255,255,0.8);
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 2;
+}
+.context-menu {
+    display: none;
+    position: absolute;
+    top:36px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    z-index: 10;
+    padding:6px 0;
+    min-width: 120px;
+    flex-direction: column;
+}
+.context-menu a,
+.context-menu button {
+    display: block;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    color: #333;
+    text-align: left;
+    background: none;
+    border: none;
+    width: 100%;
+    cursor:pointer;
+    text-decoration: none;
+
+}
+.context-menu button.delete-btn {
+    color: red;
+}
+.context-menu a:hover,
+.context-menu button:hover {
+ background: #f0f0f0;   
+}
+.post-card {
+    position: relative;
+}
+/* chỉnh nút cuối trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.pagination a,
+.pagination span {
+    border: 1px solid #333;
+    color: white;
+    background-color: #48a5e8;
+    margin: 0 5px;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    
+}
+.pagination span strong {
+  color: hotpink;
+}
+/* Xem bài viết */
+.single-post {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 34px 24px;
+    line-height: 1.6;
+}
+.single-post h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+.single-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 16px 0;
+}
+.single-post .post-date {
+    color: #777;
+    font-size: .9rem;
+    margin-bottom: 1.6em;
+}
+.single-post a.back {
+    display: inline-block;
+    margin-top: 2.5em;
+}
+.post-action {
+    margin: 16px 0;
+    display: flex;
+    gap: 10px;
+}
+.post-action a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.post-action a:hover {
+    color: rgb(238, 154, 249);
+}
+.post-action button {
+    color: #007bff;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: background-color 0.5s ease;
+    margin-right: 10px;
+}
+.post-action button:hover {
+    background-color:  rgb(238, 154, 249);;
+}
+
+/* chỉnh file contact */
+main.contact {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+}
+main.contact h1 {
+    text-align: center;
+}
+.form-contact  input,
+.form-contact textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 2px solid rgb(17, 128, 239);
+    transition: border-color 0.3s ease;
+}
+.form-contact  input:focus,
+.form-contact textarea:focus {
+    border-color: red;
+
+}
+.btn-wrapper {
+ display: flex;
+ justify-content: center;
+
+}
+.form-contact button {
+    background-color: #007bff;
+    color: white;
+    margin: 25px auto;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-contact button:hover {
+    background-color: hotpink;
+}
+/* about me */
+main.container-about {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 30px;
+}
+main.container-about img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #dfdfdf;
+}
+.img-avt {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+main.container-about p {
+    text-align: justify;
+    line-height: 1.4;
+}
+@media (max-width: 576px) {
+    .logo-img {
+    height: 60px;
+    }
+    nav .btn {
+        margin-left: 8px;
+        padding: 4px 8px;
+    }
+    footer .social-icon li a {
+        font-size: 1.7em;
+    }
+    footer .menu li a {
+    font-size: 1em;}
+    p {
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+
+    /* trang chủ phần sidebar-left */
+    .sidebar-left {
+        padding: 10px;
+        max-width: 200px;
+    }
+    .sidebar-left h3 {
+        font-size: 0.9em;
+    }
+    .sidebar-left ul li a {
+        font-size: 0.8em;
+    }
+    .add-post-btn {
+        padding: 6px 10px;
+        font-size: 0.75em;
+    }
+
+    /* chỉnh trang chủ phần bài viết */
+    .layout {
+        display: grid;
+        grid-template-columns: 1.5fr 3.5fr;
+    }
+    .post-card img {
+    width: 100%;
+    height: 120px;
+}
+    .post-info {
+        padding: 12px;
+
+    }
+    .post-info h2 {
+        font-size: 14px;
+    }
+.post-meta {
+    font-size: 9px;
+    margin-top: 4px;
+}
+.post-snippet {
+    font-size: 11px;
+    
+}
+.read-more {
+    font-size: 10px;
+}
+.pagination {
+    font-size: 0.8em;
+}
+
+/* chỉnh trang thêm bài viết */
+    main.form-page {
+        max-width: 450px;
+    }
+    .post-form label {
+        font-size: 14px;
+    }
+    .post-form input,
+    .post-form select,
+    .post-form textarea {
+        font-size: 13px;
+    }
+    .post-form button.btn-button {
+        font-size: 14px;
+        padding: 8px 20px;
+        margin-top: 20px;
+    }
+    .form-page h2 {
+        font-size: 20px;
+    }
+
+    /* xem bài viết */
+    .single-post {
+        max-width: 450px;
+        padding: 25px 15px;
+    }
+    .single-post h1 {
+    font-size: 1.7rem;}
+    
+    /* chỉnh file contact */
+    main.contact {
+        max-width: 450px;
+    }
+    .form-contact  input,
+    .form-contact textarea {
+        font-size: 12px;
+    }
+    .contact-title {
+        font-size: 26px;
+    }
+    .form-contact button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}

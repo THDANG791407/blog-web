@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css" >
+    <title>My blog</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main class="form-page">
+        <h2>📝 Viết bài mới</h2>
+        <form action="/post/new" method="POST" class="post-form">
+            <label for="title">Tiêu đề</label>
+            <input type="text" id="title" name="title" placeholder="Tiêu đề" required />
+            <label for="category">Chủ đề</label>
+            <select id="category" name="category" required>
+                <option value="">--chọn chủ đề--</option>
+                <option value="công nghệ">Công nghệ</option>
+                <option value="du lịch">Du lịch</option>
+                <option value="tài chính">Tài chính</option>
+            </select>
+            <label for="image">Link ảnh URL</label>
+            <input type="url" id="image" name="image" placeholder="https://..."/>
+            <label for="content">Nội dung</label>
+            <textarea type="text" id="content" name="content" rows="8" placeholder="Nội dung bài viết" required></textarea>
+            <button type="submit" class="btn-button">📤 Đăng bài</button>
+        </form>
+
+    </main>
+    <%- include('partials/footer') %>
+    
+</body>
+</html>

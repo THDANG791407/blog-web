@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <main class="contact">
+    <h1 class="contact-title">Contact Me</h1>
+    <form action="/post/contact" method="POST" class="form-contact">
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea name="message" class="feedback-input" placeholder="Message"></textarea>
+        <div class="btn-wrapper">
+        <button type="submit">SUBMIT</button>
+        </div>       
+    </form>
+    </main>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
